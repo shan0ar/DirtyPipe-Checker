@@ -18,9 +18,9 @@ if (( ${ver1:-0} < 5 )) ||
    (( ${ver1:-0} == 5 && ${ver2:-0} >= 16 && ${ver3:-0} >= 11 )) ||
    (( ${ver1:-0} == 5 && ${ver2:-0} > 16 ));
 then
-    echo Not vulnerable
+    echo Not vulnerable to DirtyPipe CVE-2022-0847 !
     exit 0
 else
-    echo Vulnerable
+    echo vulnerable to DirtyPipe CVE-2022-0847 !
     exit 1
 fi
