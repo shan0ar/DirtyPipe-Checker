@@ -1,7 +1,4 @@
 #!/bin/bash
-# usage
-# Check current kernel ./dpipe.sh
-# Check specific kernel ./dpipe.sh 5.10.102
 
 kernel=$1
 ver1=$(echo ${kernel:-$(uname -r | cut -d '-' -f1)} | cut -d '.' -f1)
